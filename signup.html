@@ -14,29 +14,98 @@
 </head>
 
 <body>
-
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <div class="container-fluid">
+        <div class="container">
             <a class="navbar-brand" href="index.html">
-                <img src="qa.jpeg" alt="" width="30" height="24">
+                <img src="qa.jpeg" width="30" height="30" alt="">
             </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse"
+                data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
             <div class="collapse navbar-collapse" id="navbarSupportedContent">
                 <ul class="navbar-nav me-auto mb-2 mb-lg-0">
                     <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+                        <a class="nav-link" aria-current="page" href="index.html">Home</a>
                     </li>
                     <li class="nav-item">
                         <a class="nav-link" href="schedule.html">Schedule</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="signup.html">Sign Up</a>
+                        <a class="nav-link active" href="signup.html">Sign Up</a>
                     </li>
                 </ul>
             </div>
         </div>
     </nav>
 
-    <h1>Sign Up</h1>
+    <main class="container mt-3 mb-3">
+        <img src="signup.jpg" class="img-fluid w-100" alt="hero image">
+        <hr>
+        <form>
+            <div class="row mb-3">
+                <label for="title" class="col-sm-2 col-form-label">Title</label>
+                <div class="col-sm-10">
+                    <select id="title" class="form-select" aria-label="select title" required>
+                        <option value="mrs">Mrs</option>
+                        <option value="mr">Mr</option>
+                        <option value="doctor">Doctor</option>
+                        <option value="ms">Ms</option>
+                    </select>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="firstName" class="col-sm-2 col-form-label">First Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="firstName" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="lastName" class="col-sm-2 col-form-label">Last Name</label>
+                <div class="col-sm-10">
+                    <input type="text" class="form-control" id="lastName" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="email" class="col-sm-2 col-form-label">Email</label>
+                <div class="col-sm-10">
+                    <input type="email" class="form-control" id="email" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="dateOfBirth" class="col-sm-2 col-form-label">Date of Birth</label>
+                <div class="col-sm-10">
+                    <input type="date" class="form-control" id="dateOfBirth" required>
+                </div>
+            </div>
+            <div class="row mb-3">
+                <label for="phone" class="col-sm-2 col-form-label">Phone Number</label>
+                <div class="col-sm-10">
+                    <input type="tel" class="form-control" id="phone" required>
+                </div>
+            </div>
+            <fieldset class="row mb-3">
+                <legend class="col-form-label col-sm-2 pt-0">Gender</legend>
+                <div class="col-sm-10">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="male" value="male" checked>
+                        <label class="form-check-label" for="male">
+                            Male
+                        </label>
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="gender" id="female" value="female">
+                        <label class="form-check-label" for="female">
+                            Female
+                        </label>
+                    </div>
+                </div>
+            </fieldset>
+            <button type="submit" class="btn btn-primary offset-sm-2">Sign me up!</button>
+        </form>
+
+    </main>
 
     <!-- Optional JavaScript; choose one of the two! -->
 
